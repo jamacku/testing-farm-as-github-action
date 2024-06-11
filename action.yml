@@ -20,7 +20,7 @@ inputs:
   git_ref:
     description: 'A TMT tests branch which will be used for tests'
     required: false
-    default: 'master'
+    default: '${{ github.base_ref }}'
   github_token:
     description: 'GitHub TOKEN or PAT'
     required: false
